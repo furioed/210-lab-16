@@ -6,7 +6,7 @@
 #include <iomanip>
 using namespace std;
 
-const int WIDTH = 3; // Field width for printing
+const int WIDTH = 3;
 
 class Color {
 private:
@@ -66,6 +66,8 @@ int main() {
     Color redColor(255, 0, 0);        // Full parameter constructor
     Color greenColor(0, 255, 0);      // Full parameter constructor
     Color blueColor(0, 0, 255);       // Full parameter constructor
+    Color maroon(128);                // Partial one-color constructor
+    Color turquoise(64, 224);         // Partial two-color constructor
     Color grayColor(128, 128, 128);   // Full parameter constructor (gray)
 
     cout << "Color                       Red   Green   Blue\n";
@@ -77,6 +79,8 @@ int main() {
     cout << "Blue                         "; blueColor.print();
 
     cout << "-----------------------------------------------\n";
+    cout << "Maroon                        "; maroon.print();
+    cout << "Turquoise                     "; turquoise.print();
     cout << "Gray                          "; grayColor.print();
     cout << "-----------------------------------------------\n";
 
